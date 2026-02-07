@@ -1,0 +1,132 @@
+body{
+  margin:0;
+  overflow:hidden;
+  font-family:'Quicksand', sans-serif;
+}
+
+/* Night sky */
+.sky{
+  position:fixed;
+  inset:0;
+  background:linear-gradient(#0a0f2c,#1b1f4a);
+}
+
+.moon{
+  position:absolute;
+  top:40px;
+  right:60px;
+  font-size:80px;
+}
+
+/* Cherry blossom trees */
+.trees{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:40%;
+  background:
+    radial-gradient(circle at 10% 90%, #ffb7d5 20px, transparent 40px),
+    radial-gradient(circle at 30% 80%, #ff9fc7 25px, transparent 45px),
+    radial-gradient(circle at 70% 85%, #ffb7d5 20px, transparent 40px),
+    linear-gradient(#3b1d2a,#3b1d2a);
+}
+
+/* Hearts */
+.hearts span{
+  position:fixed;
+  font-size:24px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-10vh);}
+}
+
+/* Card */
+.card{
+  position:relative;
+  z-index:2;
+  width:360px;
+  margin:120px auto;
+  background:rgba(255,255,255,0.95);
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+}
+
+h1{
+  font-family:'Pacifico', cursive;
+  color:#ff5fa2;
+  font-size:36px;
+}
+
+h2{
+  color:#444;
+}
+
+/* Buttons */
+.buttons{
+  margin-top:30px;
+}
+
+button{
+  padding:15px 35px;
+  border:none;
+  border-radius:30px;
+  font-size:18px;
+  margin:10px;
+  cursor:pointer;
+}
+
+#yes{
+  background:#ff5fa2;
+  color:white;
+}
+
+#no{
+  background:#ddd;
+}
+
+/* Popup */
+.popup{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+  z-index:5;
+  justify-content:center;
+  align-items:center;
+}
+
+.popup-box{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  animation:pop 0.4s ease;
+}
+
+@keyframes pop{
+  from{transform:scale(0);}
+  to{transform:scale(1);}
+}
+
+/* Sad face */
+#sad{
+  display:none;
+  position:fixed;
+  inset:0;
+  font-size:120px;
+  justify-content:center;
+  align-items:center;
+  z-index:4;
+}
+
+/* Fireworks */
+#fireworks{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:4;
+}
